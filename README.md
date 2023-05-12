@@ -8,6 +8,6 @@ Repository contains Matlab and Python codes and assets for estimating initial co
 After having done the above listed operations, do the following: 
 1. Run *main.m*
 2. Run *main.py*
-3. Upload processed folders to the "Output" folder. Choose the "Create a new branch for this commit and start a pull request" option. Your file will be accepted by the project administrator. 
+3. Upload processed folders to the "Output" folder. When uploading, choose the option "Create a new branch for this commit and start a pull request". Your file will be accepted by the project administrator. 
 
 
