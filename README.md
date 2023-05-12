@@ -12,8 +12,12 @@ Installing Anaconda (https://www.anaconda.com/download) is suggested, as it conv
 3. Edit line 19 of *label_data.m* and line 13 of *pre_process.m* by declaring variable *first_test* equal to the first test (type: double) present in *data.mat* that is to be processed
 # Run pipeline
 After having done the above listed operations, do the following: 
-1. Run *main.m*
-2. Run *main.py*
-3. Upload processed folders to the "Output" folder. When uploading, choose the option "Create a new branch for this commit and start a pull request". Your file will be accepted by the project administrator. 
+1. Download the repository (namely "working directory")
+2. Open Matlab
+3. Open and run *main.m*
+4. Verify that a folder named "000x" has been written in the working directory
+5. Open your Python IDE
+6. Run *main.py*
+7. Upload processed folders to the "Output" folder. When uploading, choose the option "Create a new branch for this commit and start a pull request".
 
 
