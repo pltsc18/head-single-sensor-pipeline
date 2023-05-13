@@ -8,7 +8,7 @@ Repository contains Matlab and Python codes and assets for estimating initial co
 
 Installing Anaconda (https://www.anaconda.com/download) is suggested, as it conveniently installs Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science (e.g. Spyder). Alternatively, you can separately install Python first (https://www.python.org/downloads/) and then install an IDE (e.g. Spyder: https://www.spyder-ide.org/; Python IDLE: https://www.python.org/, etc...). 
 # Before running
-Download the repository. Then: 
+Download and unzip the repository. Then: 
 1. Edit line 21 of *main.m* by declaring variable *subjects_folder* equal to the path (type: string) to the folder where subjects folders are stored i.e. folder that contains the sub-folders named "0001", "0002", "0003", etc...
 2. Edit line 24 of *main.m* by declaring variable *subID* equal to the name (type: string) of the tested subject folder (e.g. "0001").
 3. Edit line 19 of *utils_/label_data.m* and line 13 of *utils_/pre_process.m* by declaring variable *first_test* equal to the first test (type: double) present in *data.mat* that is to be processed
