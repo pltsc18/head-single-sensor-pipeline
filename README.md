@@ -3,8 +3,8 @@ Repository contains Matlab and Python codes and assets for estimating initial co
 # Requirements
 - Matlab 2020b (or more recent)
 - Python 3.9 (or more recent)
-- A Python IDE 
-- Python packages: os, numpy, matplotlib, tensorflow, scipy, tcn, xlswriter. To install a Python package run "pip install \<package name\>" in the console.
+- A Python IDE (suggested: Spyder)
+- Python packages: os, numpy, matplotlib, tensorflow, scipy, tcn. To install a Python package run "pip install \<package name\>" in the console.
 
 Installing Anaconda (https://www.anaconda.com/download) is suggested, as it conveniently installs Python, the Jupyter Notebook, and other commonly used packages for scientific computing and data science (e.g. Spyder). Alternatively, you can separately install Python first (https://www.python.org/downloads/) and then install an IDE (e.g. Spyder: https://www.spyder-ide.org/; Python IDLE: https://www.python.org/, etc...). 
 # Before running
