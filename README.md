@@ -23,6 +23,6 @@ After having done the above listed operations, do the following:
 6. Verify that a file named *output.mat* has been written in a folder named "000x" in the working directory
 7. Open and run *main2.py*
 8. Verify that a file named *output_for_R.mat* has been written in a folder named "000x" in the working directory
-9. Upload processed folders to the "Output" folder. When uploading, choose the option "Create a new branch for this commit and start a pull request".
+
 
 
