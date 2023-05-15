@@ -11,10 +11,7 @@ function [results, info] = R_like_dataframe(TimeMeasure1)
 % Outputs:
 %   pre_processed_data: INDIP pre-processed data (type: 1x1 struct)
 % -------------------------------------------------------------------------
-% initialize array for events
-results = []; 
-% initialize array for number of missed and extra events
-info = []; 
+
 struct_test_names = fieldnames(TimeMeasure1); % Test names. es. 'Test4'
 for nTest = 1:length(struct_test_names)
     struct_trial_names = fieldnames(TimeMeasure1.(struct_test_names{nTest})); % Trial names. es. 'Trial1'
@@ -22,14 +19,14 @@ for nTest = 1:length(struct_test_names)
         mWBs = TimeMeasure1.(struct_test_names{nTest}).(struct_trial_names{nTrial}).Standards.INDIP.MicroWB;
         if size(mWBs)==1
             [mWB_array_,info_mWB_] = extract_(mWBs);
-            results = [results;mWB_array_];
-            info = [info;info_mWB_];
+            results.(struct_test_names{nTest}).(struct_trial_names{nTrial}) = mWB_array_;
+            info.(struct_test_names{nTest}).(struct_trial_names{nTrial}) = info_mWB_;
         else
             for mWBi = 1:size(mWBs,1)
                 mWB = mWBs{mWBi,1};
                 [mWB_array_,info_mWB_] = extract_(mWB);
-                results = [results;mWB_array_];
-                info = [info;info_mWB_];
+                results.(struct_test_names{nTest}).(struct_trial_names{nTrial}) = mWB_array_;
+                info.(struct_test_names{nTest}).(struct_trial_names{nTrial}) = info_mWB_;
             end
         end
     end
